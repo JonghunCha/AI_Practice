@@ -25,7 +25,7 @@ matplotlib : 3.4.2
 """
 import tensorflow
 import pandas
-import sklearn.model_selection
+from sklearn.model_selection import train_test_split
 import matplotlib.pyplot
 
 #데이터 호출
@@ -50,7 +50,7 @@ X = pandas.concat([price, maint, doors, persons, lug_capacity, safety], axis=1)
 y = labels.values
 
 #train, test데이터 분리
-X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 #모델 생성 및 컴파일
 input_layer = tensorflow.keras.layers.Input(shape=(X.shape[1],))
