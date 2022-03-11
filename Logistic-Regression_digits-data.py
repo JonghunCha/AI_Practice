@@ -1,9 +1,16 @@
 """
 -환경-
 os : windows 10
+gpu : RTX 3060
+tensorflow : 2.4.0
 python : 3.8
+cuda : 11.0
+cudnn : 8.0.5
 anaconda : 4.11.0
+numpy : 1.19.5
+pandas : 1.3.1
 sklearn : 0.24.2
+matplotlib : 3.4.2
 
 -데이터-
 sklearn에서 제공하는 digits데이터 사용(사람이 숫자를 손글씨로 적은 데이터)

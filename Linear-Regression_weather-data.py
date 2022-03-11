@@ -1,7 +1,11 @@
 """
 -환경-
 os : windows 10
+gpu : RTX 3060
+tensorflow : 2.4.0
 python : 3.8
+cuda : 11.0
+cudnn : 8.0.5
 anaconda : 4.11.0
 numpy : 1.19.5
 pandas : 1.3.1
