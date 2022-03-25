@@ -82,7 +82,7 @@ valid_generator = valid.flow_from_directory(valid_dir,
 
 test = tensorflow.keras.preprocessing.image.ImageDataGenerator(rescale=1.0/255.0)
 
-test_generator = test.flow_from_directory(valid_dir,
+test_generator = test.flow_from_directory(test_dir,
                                             target_size=(227, 227),
                                             color_mode="rgb",
                                             batch_size=32,
